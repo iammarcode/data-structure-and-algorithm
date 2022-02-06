@@ -1,4 +1,4 @@
-package com.codewithmosh;
+package com.codewithmosh.array;
 
 public class Array {
     private int count;

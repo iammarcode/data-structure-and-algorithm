@@ -1,4 +1,4 @@
-package com.codewithmosh;
+package com.codewithmosh.linkedList;
 
 public class Node {
     private int value;

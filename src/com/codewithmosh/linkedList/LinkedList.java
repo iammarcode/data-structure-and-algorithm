@@ -1,4 +1,4 @@
-package com.codewithmosh;
+package com.codewithmosh.linkedList;
 
 
 import java.util.NoSuchElementException;
@@ -135,17 +135,54 @@ public class LinkedList {
     //                 k
     //                 size-k
     public int findKthFromTheEnd(int k) {
-        Node curr = first;
+        Node current = first;
+        Node second = first;
 
-
-        if (k > size) return 0;
-
-
-        for (int i = 1; i < size - k + 1; i++) {
-            curr = curr.next;
+        if (k > size) {
+            return 0;
         }
 
-        return curr.value;
+        for (int i = 1; i < k; i++) {
+            second = second.next;
+        }
+
+        while (second.next != null) {
+            current = current.next;
+            second = second.next;
+        }
+
+        return current.value;
+    }
+
+    public void printMiddle() {
+        Node fast;
+        Node slow;
+
+
+        if (size == 0) {
+
+        }
+
+        if (size % 2 == 1) {
+            fast = first;
+            slow = first;
+
+            while (fast.next != null) {
+                slow = slow.next;
+                fast = fast.next.next;
+            }
+
+            System.out.println("odd middle value: " + slow.value);
+        } else {
+            fast = first.next;
+            slow = first;
+
+            while (fast.next != null) {
+                slow = slow.next;
+                fast = fast.next.next;
+            }
+            System.out.println("even middle value: " + slow.value + "," + slow.next.value);
+        }
     }
 
 
