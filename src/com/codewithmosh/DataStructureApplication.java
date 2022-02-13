@@ -1,5 +1,7 @@
 package com.codewithmosh;
 
+import com.codewithmosh.stack.Expression;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Stack;
@@ -7,11 +9,15 @@ import java.util.Stack;
 
 public class DataStructureApplication {
     public static void main(String[] args) {
-        Stack<Integer> stack = new Stack<>();
-        stack.push(10);
-        stack.push(20);
-        stack.push(30);
+        String testStr = "((<1> + <2>))[a]";
 
-        System.out.println(stack.peek());
+
+        Expression exp = new Expression();
+        System.out.println(exp.isBalanced(testStr));
+
+
+
+
+
     }
 }

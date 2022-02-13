@@ -48,9 +48,6 @@ public class Array {
     }
 
 
-
-
-
     public int getLength() {
         return items.length;
     }
