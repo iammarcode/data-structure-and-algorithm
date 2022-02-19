@@ -25,7 +25,7 @@ public class Array {
         }
 
         for (int i = position; i < count; i++) {
-            items[i] = items[i+1];
+            items[i] = items[i + 1];
         }
 
         count--;
@@ -36,7 +36,7 @@ public class Array {
             System.out.println(items[i]);
         }
     }
-    
+
     public int max() {
         int max = 0;
         for (int i = 0; i < items.length; i++) {

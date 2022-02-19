@@ -9,7 +9,7 @@ public class Expression {
     private final List<Character> leftBrackets = Arrays.asList('(', '{', '[', '<');
     private final List<Character> rightBrackets = Arrays.asList(')', '}', ']', '>');
 
-    public boolean isBalanced (String input) {
+    public boolean isBalanced(String input) {
         var stack = new Stack<Character>();
 
         for (char ch : input.toCharArray()) {
@@ -19,7 +19,8 @@ public class Expression {
 
                 Character top = stack.pop();
                 if (rightBrackets.indexOf(ch) != leftBrackets.indexOf(top)) return false;
-            };
+            }
+            ;
         }
 
         return stack.isEmpty();
