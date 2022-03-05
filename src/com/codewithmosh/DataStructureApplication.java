@@ -1,5 +1,6 @@
 package com.codewithmosh;
 
+import com.codewithmosh.queue.LinkedListQueue;
 import com.codewithmosh.queue.PriorityQueue;
 import com.codewithmosh.queue.QueueReverser;
 
@@ -9,18 +10,18 @@ import java.util.*;
 public class DataStructureApplication {
     public static void main(String[] args) {
 
-        QueueReverser queue = new QueueReverser(4);
+        LinkedListQueue queue = new LinkedListQueue();
 
         queue.enqueue(1);
         queue.enqueue(2);
         queue.enqueue(3);
         queue.enqueue(4);
         queue.enqueue(5);
-        queue.enqueue(6);
 
-        queue.reverse(5);
+        queue.dequeue();
+        queue.dequeue();
 
-        System.out.println(queue);
+        System.out.println(Arrays.toString(queue.toArray()));
 
 
 
