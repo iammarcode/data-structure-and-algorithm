@@ -5,11 +5,11 @@ import java.util.Arrays;
 // circular array queue
 // [0,0,30,40,50]
 //      F      R
-public class ArrayQueue {
+public class CircularArrayQueue {
     private int front, rear, count;
     private int[] items;
 
-    public ArrayQueue(int capacity) {
+    public CircularArrayQueue(int capacity) {
         items = new int[capacity];
     }
 
