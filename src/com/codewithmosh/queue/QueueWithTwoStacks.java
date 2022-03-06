@@ -5,7 +5,7 @@ import java.util.Stack;
 //queue [1,2,3,6,7]
 //stack1 [6,7] enqueue
 //stack2 [3,2,1] dequeue
-public class QueueWithTowStacks {
+public class QueueWithTwoStacks {
     private Stack<Integer> stack1 = new Stack<>();
     private Stack<Integer> stack2 = new Stack<>();
 
