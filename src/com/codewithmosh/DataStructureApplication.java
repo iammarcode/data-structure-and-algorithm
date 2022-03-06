@@ -3,6 +3,7 @@ package com.codewithmosh;
 import com.codewithmosh.queue.LinkedListQueue;
 import com.codewithmosh.queue.PriorityQueue;
 import com.codewithmosh.queue.QueueReverser;
+import com.codewithmosh.queue.StackWithTwoQueue;
 
 import java.util.*;
 
@@ -10,21 +11,19 @@ import java.util.*;
 public class DataStructureApplication {
     public static void main(String[] args) {
 
-        LinkedListQueue queue = new LinkedListQueue();
+        StackWithTwoQueue queue = new StackWithTwoQueue();
 
-        queue.enqueue(1);
-        queue.enqueue(2);
-        queue.enqueue(3);
-        queue.enqueue(4);
-        queue.enqueue(5);
+        queue.push(1);
+        queue.push(2);
+        queue.push(3);
+        queue.push(4);
 
-        queue.dequeue();
-        queue.dequeue();
+        queue.pop();
+        queue.pop();
+        queue.pop();
 
-        System.out.println(Arrays.toString(queue.toArray()));
-
-
-
+        System.out.println(queue.peek());
+        System.out.println(queue.print());
     }
 
     public static void revers(Queue<Integer> queue) {
