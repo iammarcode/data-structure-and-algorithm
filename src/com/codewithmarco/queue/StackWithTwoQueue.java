@@ -1,8 +1,7 @@
-package com.codewithmosh.queue;
+package com.codewithmarco.queue;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.Queue;
 
 // stack [1,2,3]

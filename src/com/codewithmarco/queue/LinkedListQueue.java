@@ -1,6 +1,4 @@
-package com.codewithmosh.queue;
-
-import java.util.LinkedList;
+package com.codewithmarco.queue;
 
 public class LinkedListQueue {
     public class Node {

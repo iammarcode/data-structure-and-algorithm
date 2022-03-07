@@ -1,9 +1,6 @@
-package com.codewithmosh;
+package com.codewithmarco;
 
-import com.codewithmosh.queue.LinkedListQueue;
-import com.codewithmosh.queue.PriorityQueue;
-import com.codewithmosh.queue.QueueReverser;
-import com.codewithmosh.queue.StackWithTwoQueue;
+import com.codewithmarco.queue.StackWithTwoQueue;
 
 import java.util.*;
 

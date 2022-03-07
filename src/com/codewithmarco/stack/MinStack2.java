@@ -1,4 +1,4 @@
-package com.codewithmosh.stack;
+package com.codewithmarco.stack;
 
 public class MinStack2 {
     class Elem {

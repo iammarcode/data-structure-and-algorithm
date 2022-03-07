@@ -1,4 +1,4 @@
-package com.codewithmosh.stack;
+package com.codewithmarco.stack;
 
 // array solution
 public class MinStack1 {

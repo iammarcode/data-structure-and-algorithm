@@ -1,4 +1,4 @@
-package com.codewithmosh.queue;
+package com.codewithmarco.queue;
 
 import java.util.Arrays;
 import java.util.Stack;
