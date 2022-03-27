@@ -3,7 +3,7 @@ package com.codewithmarco.hash;
 import java.util.Arrays;
 import java.util.LinkedList;
 
-public class CustomHashTable {
+public class CustomHashTableWithChaining {
     private class Entry {
         private int key;
         private String value;
@@ -68,7 +68,7 @@ public class CustomHashTable {
         throw new IllegalStateException();
     }
 
-    public int hash(int k) {
+    private int hash(int k) {
         return k % items.length;
     }
 
