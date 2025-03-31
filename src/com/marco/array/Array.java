@@ -1,4 +1,4 @@
-package com.codewithmarco.array;
+package com.marco.array;
 
 public class Array {
     private int count;

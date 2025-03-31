@@ -1,4 +1,4 @@
-package com.codewithmarco.hash;
+package com.marco.hash;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,7 +8,7 @@ public class TowSum {
     public static int[] findTowSumBruteForce(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < nums.length; j++) {
-                
+
             }
         }
         return new int[]{};

@@ -1,16 +1,6 @@
-package com.codewithmarco.queue;
+package com.marco.queue;
 
 public class LinkedListQueue {
-    public class Node {
-        private int value;
-        private Node next;
-
-        public Node(int item) {
-            this.value = item;
-            this.next = null;
-        }
-    }
-
     private Node front, rear;
     private int size;
 
@@ -44,6 +34,16 @@ public class LinkedListQueue {
             current = current.next;
         }
         return array;
+    }
+
+    public class Node {
+        private int value;
+        private Node next;
+
+        public Node(int item) {
+            this.value = item;
+            this.next = null;
+        }
     }
 }
 

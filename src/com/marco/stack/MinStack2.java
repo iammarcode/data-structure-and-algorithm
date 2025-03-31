@@ -1,17 +1,6 @@
-package com.codewithmarco.stack;
+package com.marco.stack;
 
 public class MinStack2 {
-    class Elem {
-        public int value;
-        public int min;
-        public Elem next;
-
-        public Elem(int value, int min) {
-            this.value = value;
-            this.min = min;
-        }
-    }
-
     public Elem top;
 
     public MinStack2() {
@@ -48,5 +37,16 @@ public class MinStack2 {
         if (top == null)
             return -1;
         return top.min;
+    }
+
+    class Elem {
+        public int value;
+        public int min;
+        public Elem next;
+
+        public Elem(int value, int min) {
+            this.value = value;
+            this.min = min;
+        }
     }
 }

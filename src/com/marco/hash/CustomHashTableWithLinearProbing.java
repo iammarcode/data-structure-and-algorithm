@@ -1,27 +1,8 @@
-package com.codewithmarco.hash;
+package com.marco.hash;
 
 import java.util.Arrays;
-import java.util.LinkedList;
 
 public class CustomHashTableWithLinearProbing {
-    private class Entry {
-        private int key;
-        private String value;
-
-        public Entry(int key, String value) {
-            this.key = key;
-            this.value = value;
-        }
-
-        @Override
-        public String toString() {
-            return "Entry{" +
-                    "key=" + key +
-                    ", value='" + value + '\'' +
-                    '}';
-        }
-    }
-
     private int size = 5;
     private int count;
     private Entry[] items = new Entry[size];
@@ -85,5 +66,23 @@ public class CustomHashTableWithLinearProbing {
         return "CustomHashTable{" +
                 "items=" + Arrays.toString(items) +
                 '}';
+    }
+
+    private class Entry {
+        private int key;
+        private String value;
+
+        public Entry(int key, String value) {
+            this.key = key;
+            this.value = value;
+        }
+
+        @Override
+        public String toString() {
+            return "Entry{" +
+                    "key=" + key +
+                    ", value='" + value + '\'' +
+                    '}';
+        }
     }
 }

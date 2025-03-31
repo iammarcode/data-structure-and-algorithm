@@ -1,27 +1,9 @@
-package com.codewithmarco.hash;
+package com.marco.hash;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 
 public class CustomHashTableWithChaining {
-    private class Entry {
-        private int key;
-        private String value;
-
-        public Entry(int key, String value) {
-            this.key = key;
-            this.value = value;
-        }
-
-        @Override
-        public String toString() {
-            return "Entry{" +
-                    "key=" + key +
-                    ", value='" + value + '\'' +
-                    '}';
-        }
-    }
-
     private LinkedList<Entry>[] items = new LinkedList[5];
 
     public void put(int k, String v) {
@@ -77,5 +59,23 @@ public class CustomHashTableWithChaining {
         return "CustomHashTable{" +
                 "items=" + Arrays.toString(items) +
                 '}';
+    }
+
+    private class Entry {
+        private int key;
+        private String value;
+
+        public Entry(int key, String value) {
+            this.key = key;
+            this.value = value;
+        }
+
+        @Override
+        public String toString() {
+            return "Entry{" +
+                    "key=" + key +
+                    ", value='" + value + '\'' +
+                    '}';
+        }
     }
 }

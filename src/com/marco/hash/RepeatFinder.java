@@ -1,4 +1,4 @@
-package com.codewithmarco.hash;
+package com.marco.hash;
 
 import java.util.HashMap;
 import java.util.HashSet;

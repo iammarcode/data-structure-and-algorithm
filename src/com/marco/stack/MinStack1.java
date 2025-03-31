@@ -1,4 +1,4 @@
-package com.codewithmarco.stack;
+package com.marco.stack;
 
 // array solution
 public class MinStack1 {

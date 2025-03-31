@@ -1,9 +1,6 @@
-package com.codewithmarco;
+package com.marco;
 
-import com.codewithmarco.hash.*;
-import com.codewithmarco.queue.StackWithTwoQueue;
-
-import java.util.*;
+import com.marco.hash.CountPairWithDiff;
 
 
 public class DataStructureApplication {

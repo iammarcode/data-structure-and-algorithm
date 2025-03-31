@@ -1,4 +1,4 @@
-package com.codewithmarco.stack;
+package com.marco.stack;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,4 +1,5 @@
-# dataStructureAlgorithm
+# DSA
+
 Java
 
 Implemented:

@@ -1,18 +1,9 @@
-package com.codewithmarco.linkedList;
+package com.marco.linkedList;
 
 
 import java.util.NoSuchElementException;
 
 public class LinkedList {
-    public class Node {
-        private int value;
-        private Node next;
-
-        public Node(int item) {
-            this.value = item;
-        }
-    }
-
     private Node first;
     private Node last;
     private int size;
@@ -68,7 +59,6 @@ public class LinkedList {
 
         size--;
     }
-
 
     public void removeLast() {
         if (isEmpty()) throw new NoSuchElementException();
@@ -182,6 +172,15 @@ public class LinkedList {
                 fast = fast.next.next;
             }
             System.out.println("even middle value: " + slow.value + "," + slow.next.value);
+        }
+    }
+
+    public class Node {
+        private int value;
+        private Node next;
+
+        public Node(int item) {
+            this.value = item;
         }
     }
 

@@ -1,4 +1,4 @@
-package com.codewithmarco.queue;
+package com.marco.queue;
 
 import java.util.Arrays;
 

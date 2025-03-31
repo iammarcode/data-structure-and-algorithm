@@ -1,4 +1,4 @@
-package com.codewithmarco.stack;
+package com.marco.stack;
 
 // TowStack: A space efficient implementation
 public class TwoStacks {

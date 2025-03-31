@@ -1,7 +1,6 @@
-package com.codewithmarco.hash;
+package com.marco.hash;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
 //Input: [1, 7, 5, 9, 2, 12, 3] K=2

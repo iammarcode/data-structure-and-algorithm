@@ -1,8 +1,7 @@
-package com.codewithmarco.hash;
+package com.marco.hash;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Map;
 
 public class FindMostFrequent {
     // sorting + for loops: O(n log(n))
